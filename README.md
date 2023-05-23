@@ -17,16 +17,6 @@
 - `/stations_velo/n/cap` qui retourne la capacité de la station de vélo n, sous forme d’un nombre entier<br></br>
 - `/stations_velo/toutes/cap` qui retourne un json contenant, par id, la capacité de chaque station ainsi que la capacité de l’ensemble des stations contenues dans le fichier<br></br>
 
-# Optionnel : 
-
-### Créer un environnement virtuel :
-`python.exe -m venv fastapi-simple`
-
-### Activer l'environnement :
-sous windows : `.\fastapi-simple\Scripts\Activate.ps1`
-
-### Mettre à jour pip :
-`python.exe -m pip install --upgrade pip`
 
 # Installation :
 
