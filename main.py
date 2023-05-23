@@ -4,6 +4,7 @@ from fastapi.responses import HTMLResponse, Response
 import requests
 import random
 import json
+import uvicorn
 
 app = FastAPI()
 
@@ -87,3 +88,6 @@ async def read2_velo(id : str, info : Union[str, None] = None) :
 		else :
 			return json.dumps(stations[int(id)]).encode('utf8')
 	
+    
+if __name__ == "__main__" :
+    uvicorn.run(app)
