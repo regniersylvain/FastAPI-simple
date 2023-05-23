@@ -8,7 +8,6 @@ import uvicorn
 
 app = FastAPI()
 
-
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
@@ -88,6 +87,7 @@ async def read2_velo(id : str, info : Union[str, None] = None) :
 		else :
 			return json.dumps(stations[int(id)]).encode('utf8')
 	
-    
+
 if __name__ == "__main__" :
-    uvicorn.run(app)
+    uvicorn.run(app)                           # sur localhost
+    #uvicorn.run(app, host=0.0.0.0, port=8000) # sur le reseau

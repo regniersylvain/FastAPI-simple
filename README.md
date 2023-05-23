@@ -18,11 +18,13 @@
 - `/stations_velo/toutes/cap` qui retourne un json contenant, par id, la capacité de chaque station ainsi que la capacité de l’ensemble des stations contenues dans le fichier<br></br>
 
 
-# Installation :
-
-### Installer les modules complémentaires :
+# Installation les modules complémentaires :
 `pip install -r requirements.txt`
 
 # Lancement de l'API :
 `python.exe .\main.py`
 
+# Petits plus
+
+- une documentation automatiquement généré par FastAPI est disponible sur `/docs`
+- d'origine l'API écoute sur localhost, vous pouvez modifier ça à la fin de [main.py](https://github.com/regniersylvain/FastAPI-simple/blob/main/main.py)
