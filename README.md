@@ -13,7 +13,7 @@
 - `/stations_velo?id=n&addr` qui retourne l’adresse de la station de vélo n, sous forme d’un texte<br></br>
 - `/stations_velo?id=n&cap` qui retourne la capacité de la station de vélo n, sous forme d’un nombre entier<br></br>
 - `/stations_velo?id=toutes&cap` qui retourne la capacité totale de l’ensemble des stations contenues dans le fichier<br></br>
-- `/stations_velo/n/addr` c'est un endpoint qui est une variante du précédent) qui retourne l’adresse de la station de vélo n, sous forme d’un texte<br></br>
+- `/stations_velo/n/addr` (c'est un endpoint qui est une variante du précédent) qui retourne l’adresse de la station de vélo n, sous forme d’un texte<br></br>
 - `/stations_velo/n/cap` qui retourne la capacité de la station de vélo n, sous forme d’un nombre entier<br></br>
 - `/stations_velo/toutes/cap` qui retourne un json contenant, par id, la capacité de chaque station ainsi que la capacité de l’ensemble des stations contenues dans le fichier<br></br>
 
@@ -28,3 +28,4 @@
 
 - une documentation automatiquement généré par FastAPI est disponible sur `/docs`
 - d'origine l'API écoute sur localhost, vous pouvez modifier ça à la fin de [main.py](https://github.com/regniersylvain/FastAPI-simple/blob/main/main.py)
+- Le notebook [testeur.ipynb](./testeur.ipynb) permet de tester chaque endpoint de l'API, lancé en local (sur 127.0.0.1)
